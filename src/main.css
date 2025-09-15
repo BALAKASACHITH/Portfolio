@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body,#root{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.App{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.windowTop{
+    height: 10%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+.windowBot{
+    height: 90%;
+    width: 100%;
+    background-color: green;
+}
