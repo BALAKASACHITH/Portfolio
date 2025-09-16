@@ -10,51 +10,159 @@ html,body,#root{
     margin: 0;
 }
 .App{
+    position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: #0d1117; /* Rich black background */
+    color: #f0f6fc; /* Light gray text */
 }
 .windowTop{
+    cursor: pointer;
     height: 10%;
     width: 100%;
-    background-color: red;
+    background-color: #1a1a1a; /* Deep charcoal for top bar */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #0066cc;
+}
+.wtLeft h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(90deg, #58a6ff, #0066cc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 .wtLeft{
     height: 100%;
-    width: 25%;
-    background-color: blue;
+    width: 25%;/* Professional blue accent */
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-}
-.wtlProfile{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: white;
-    box-sizing: border-box;
-    background-image: url(./assets//MyImage.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    padding-left: 10px;
+    background-color: #1a1a1a;
+    color:#f0f6fc;
 }
 .wtRight{
     height: 100%;
     width: 75%;
-    background-color: yellow;
+    background-color: #1a1a1a; /* Blend with app background */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+.icons{
+    color: #f0f6fc;
+    cursor: pointer;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.mtRight{
+    display: none;
+}
+.mobileBot{
+    display: none;
+}
 .windowBot{
     height: 90%;
     width: 100%;
-    background-color: green;
+    background-color: #0d1117; /* Deep charcoal for main body */
+}
+
+.Home{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.Skills{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.CodeLab{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.Projects{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.About{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+/* mobile */
+@media (max-width: 480px) {
+    .wtLeft{
+        width: 80%;
+        padding-left: 5px;
+        background-color: #0d1117;
+    }
+    .wtRight{
+        display: none;
+    }
+    .mtRight{
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        background-color: #0d1117;
+    }
+    .icons{
+        flex-direction: column;
+    }
+    .windowTop{
+        border: none;
+    }
+    .mobileBot{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 10%;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background-color: #1a1a1a;
+        color: #ffffff;
+        box-shadow: 0 0 5px #0066cc;
+        box-sizing: border-box;
+    }
+    .mHome{
+        background-color: red;
+    }
+    .mSkills{
+        background-color: green;
+    }
+    .mCodeLab{
+        background-color: blue;
+    }
+    .mProjects{
+        background-color: orange;
+    }
+    .mAbout{
+        background-color: aqua;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    /* You can add responsive tweaks here */
 }
